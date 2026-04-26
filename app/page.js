@@ -1,17 +1,14 @@
-import HeroSection from '@/components/HeroSection';
-import FeatureCards from '@/components/FeatureCards';
+import HeroSection from "@/components/HeroSection";
+import FeatureCards from "@/components/FeatureCards";
+import DemoSimulator from "@/components/DemoSimulator";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950">
+    <main style={{ minHeight: "100vh", backgroundColor: "#020617" }}>
       <HeroSection />
       <FeatureCards />
-      <section id="demo" className="py-20 px-6 max-w-4xl mx-auto">
-        <div className="text-center text-slate-400">
-          <p className="text-lg">🚧 Demo simulator coming in Phase 3</p>
-        </div>
-      </section>
-      <footer className="text-center py-8 text-slate-500 text-sm border-t border-slate-800">
+      <DemoSimulator />
+      <footer style={{ textAlign: "center", padding: "2rem", color: "#475569", fontSize: "0.875rem", borderTop: "1px solid #1e293b" }}>
         © 2025 CityPulse Wallet · Built for DSV Gruppe Hackathon
       </footer>
     </main>
